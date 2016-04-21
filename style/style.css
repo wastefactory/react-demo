@@ -44,10 +44,10 @@ divider{
 }
 
 .header{
-	position:fixed; 
-	top:0px; 
-	margin:auto; 
-	z-index:100000; 
+	position:fixed;
+	top:0px;
+	margin:auto;
+	z-index:100000;
 	width:100%;
 }
 
@@ -153,6 +153,14 @@ divider{
 
 .setup-code .indent{
 	margin-left: 30px;
+}
+
+.setup-code .indentTwo{
+	margin-left: 60px;
+}
+
+.setup-code .indentThree{
+	margin-left: 90px;
 }
 
 .setup-code .comment{

@@ -15,24 +15,28 @@ import Render from './components/render/render';
 import Setup from './components/setup/setup';
 import ReactComponent from './components/component/component';
 
-export default (
-  <Router history={browserHistory}>
-    <Route component={MainLayout}>
+const AppRouter = () => {
+		return(
+      <Router history={browserHistory}>
+        <Route component={MainLayout}>
 
-      <Route path="/" component={Home} />
-      <Route path="setup" component={Setup} />
-      <Route path="jsx" component={JSX} />
-      <Route path="component" component={ReactComponent} />
-      <Route path="render" component={Render} />
-      <Route path="route" component={Routing} />
+          <Route path="/" component={Home} />
+          <Route path="setup" component={Setup} />
+          <Route path="jsx" component={JSX} />
+          <Route path="component" component={ReactComponent} />
+          <Route path="render" component={Render} />
+          <Route path="route" component={Routing} />
 
-      <Route path="users">
-        <Route component={SearchLayout}>
-          <IndexRoute component={UserList} />
+          <Route path="users">
+            <Route component={SearchLayout}>
+              <IndexRoute component={UserList} />
+            </Route>
+            <Route path=":userId" component={UserProfile} />
+          </Route>
+
         </Route>
-        <Route path=":userId" component={UserProfile} />
-      </Route>
+      </Router>
+		);
+}
 
-    </Route>
-  </Router>
-);
+export default AppRouter;
