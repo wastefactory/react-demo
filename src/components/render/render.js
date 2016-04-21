@@ -9,9 +9,9 @@ class Render extends Component{
 	        </div>
           <divider />
 
-        	<div className="description">
-        		
-        	</div>
+          <div className="description">
+            Hold your horses, I'm working on it!
+          </div>
       	</div>
     );
   }  

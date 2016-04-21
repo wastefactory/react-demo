@@ -11,7 +11,7 @@ class Home extends Component{
         <divider />
 
         <div className="description">
-        	<p>The purpose of this simple demo is to help developers that just started looking into react, like me. I am trying to make a demo app and I will try to use all the basic implementation, using react, of course. <Link to="render" className="link">So let's get started</Link></p>        
+        	<p>The purpose of this simple demo is to help developers that just started looking into react, like me. I am trying to make a demo app and I will try to use all the basic implementation, using react, of course. <Link to="setup" className="link">So let's get started</Link></p>        
         </div>
       </div>
     );

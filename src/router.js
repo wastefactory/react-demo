@@ -12,14 +12,18 @@ import UserProfile from './components/users/user_profile';
 import Routing from './components/route/router';
 import JSX from './components/jsx/jsx';
 import Render from './components/render/render';
+import Setup from './components/setup/setup';
+import ReactComponent from './components/component/component';
 
 export default (
   <Router history={browserHistory}>
     <Route component={MainLayout}>
 
       <Route path="/" component={Home} />
-      <Route path="render" component={Render} />
+      <Route path="setup" component={Setup} />
       <Route path="jsx" component={JSX} />
+      <Route path="component" component={ReactComponent} />
+      <Route path="render" component={Render} />
       <Route path="route" component={Routing} />
 
       <Route path="users">
