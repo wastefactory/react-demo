@@ -14,6 +14,7 @@ import JSX from './components/jsx/jsx';
 import Render from './components/render/render';
 import Setup from './components/setup/setup';
 import ReactComponent from './components/component/component';
+import Link from './components/link/link';
 
 const AppRouter = () => {
 		return(
@@ -26,6 +27,7 @@ const AppRouter = () => {
           <Route path="component" component={ReactComponent} />
           <Route path="render" component={Render} />
           <Route path="route" component={Routing} />
+          <Route path="link" component={Link} />
 
           <Route path="users">
             <Route component={SearchLayout}>

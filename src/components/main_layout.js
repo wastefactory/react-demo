@@ -12,6 +12,7 @@ class MainLayout extends Component{
             <li><Link to="jsx" activeClassName="active">JSX</Link></li>
             <li><Link to="component" activeClassName="active">Component</Link></li>
             <li><Link to="route" activeClassName="active">Route</Link></li>
+            <li><Link to="link" activeClassName="active">Link</Link></li>
             <li className="author"><a href="https://github.com/wastefactory" target="_blank"><i className="fa fa-github"></i></a></li>
           </ul>
         </div>
@@ -19,11 +20,11 @@ class MainLayout extends Component{
         <div id="content">
           <main>
             {this.props.children}
-          </main>        
+          </main>
         </div>
       </div>
     );
-  }  
+  }
 }
 
 export default MainLayout;
