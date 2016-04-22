@@ -2,7 +2,8 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
 
 body{
-	background-color: #f1f1f1 !important;
+	background-color: #FFEBCD !important;
+	/*background: url(../images/img-noise-50x50.png);*/
 }
 
 h1{
@@ -21,13 +22,17 @@ i{
 	font-size:30px !important;
 }
 
+code{
+	background-color: #FFF8DC !important;
+}
+
 .logo-font{
 	font-family: 'Pacifico', cursive;
 }
 
 divider{
-	border-bottom: 1px solid #ddd;
-	box-shadow: 0 1px 1px #fff;
+	border-bottom: 1px solid #F5DEB3;
+	box-shadow: 0 1px 1px #FFF8DC;
 	display: block;
 }
 

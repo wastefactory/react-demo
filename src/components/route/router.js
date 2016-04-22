@@ -53,8 +53,8 @@ class Routing extends Component{
                 <code><span className="indent">{"return("}</span></code>
                 <code><span className="indentTwo">{"<Router history={browserHistory}>"}</span></code>
                 <code>{""}</code>
-                <code className="comment indentThree">{"// And then we need to a path and add the components we imported."}</code>
-                <code className="comment indentThree">{"// And also let's set home as the default page by setting '/' as the path."}</code>
+                <code className="comment">{"// And then we need to a path and add the components we imported."}</code>
+                <code className="comment">{"// And also let's set home as the default page by setting '/' as the path."}</code>
                 <code><span className="indentThree">{"<Route path='/' component={Home} />"}</span></code>
                 <code><span className="indentThree">{"<Route path='about' component={About} />"}</span></code>
                 <code><span className="indentTwo">{"</Router>"}</span></code>
