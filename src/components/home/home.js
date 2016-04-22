@@ -6,7 +6,7 @@ class Home extends Component{
   render(){
 
     const pageInfo = {
-      title: ["This is a demo ", <label className="theme" key="0">React</label>],
+      title: ["This is a demo for ", <label className="theme" key="0">React</label>],
       description: "A javascript library for building user interfaces"
     };
 
