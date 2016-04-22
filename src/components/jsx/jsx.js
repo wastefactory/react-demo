@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
+import PageTitle from './../page_title';
 
 class JSX extends Component{
   render(){
+
+    const pageInfo = {
+      title: ["Using ", <label className="theme" key="0">JSX</label>],
+      description: "A XML-like syntax extension to ECMAScript without any defined semantics."
+    };
+
     return (
       	<div className="home-page">
-	        <div className="title">
-	        	<h1 className="logo-font">Using <label className="theme">JSX</label></h1> <span>A XML-like syntax extension to ECMAScript without any defined semantics.</span>
-	        </div>
-          <divider />
+	        <PageTitle info={pageInfo}/>
 
           <div className="description">
             <p>This Demo uses <a href="http://es6-features.org/" target="_blank" className="link">ES6</a>, <a className="link" href="https://facebook.github.io/jsx/" target="_blank">JSX</a> and webpack+babel to tranlate JSX and ES6 codes into actual Vanilla Javascript that the browser can understand.</p>

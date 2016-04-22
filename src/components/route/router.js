@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
+import PageTitle from './../page_title';
 
 class Routing extends Component{
   render(){
+
+    const pageInfo = {
+      title: ["React ", <label className="theme" key="0">Router</label>],
+      description: "So, one of the most important thing for an app is routing states."
+    };
+
     return (
       	<div className="home-page">
-	        <div className="title">
-	        	<h1 className="logo-font">React <label className="theme">Router</label></h1> <span>So, one of the most important thing for an app is routing states.</span>
-	        </div>
-          <divider />
+	        <PageTitle info={pageInfo}/>
 
         	<div className="description">
               <p>For the router, we need to use a library called <a className="link" href="https://github.com/reactjs/react-router" target="_blank">react-router</a>, it is a complete routing library for React and basically it is a component. Let{"'"}s try it.</p>

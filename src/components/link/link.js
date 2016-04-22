@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
+import PageTitle from './../page_title';
 
 class Link extends Component{
 render(){
+
+  const pageInfo = {
+    title: ["Linking ", <label className="theme" key="0">Routers</label>],
+    description: "Now let's create a link for our routers."
+  };
+
   return (
     	<div className="home-page">
-        <div className="title">
-        	<h1 className="logo-font"><label className="theme">Linking</label> Routers</h1> <span>Now let{"'"}s create a link for our routers.</span>
-        </div>
-        <divider />
+        <PageTitle info={pageInfo}/>
 
         <div className="description">
           <p>Hold your horses, I{"'"}m working on it</p>

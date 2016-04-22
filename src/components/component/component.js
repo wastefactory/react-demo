@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
+import PageTitle from './../page_title';
 
 class ReactComponent extends Component{
   render(){
+
+    const pageInfo = {
+      title: ["Writing ", <label className="theme" key="0">Components</label>],
+      description: "Let's start writing our first simple component"
+    };
+
     return (
       	<div className="home-page">
-	        <div className="title">
-	        	<h1 className="logo-font">Writing <label className="theme">Components</label></h1> <span>Let's start writing our first simple component</span>
-	        </div>
-          <divider />
+	        <PageTitle info={pageInfo}/>
 
         	<div className="description">
         		<p>So before we start, what is React and what's it doing for us and how are we gonna use it with any type of application? React is a javascript library that is used to produce HTML that is shown to the user in a web browser, so when we are writing react code, we are writing individual components. A component is a collection of javascript function that produces HTML.</p>
@@ -44,13 +48,13 @@ class ReactComponent extends Component{
               <code className="comment">{"// Takes this component's generated HTML and put it into the DOM"}</code>
               <code className="comment">{"// So, it's basically telling ReactDOM to find that element that has 'container' id and try to render the App component into that element."}</code>
               <code>{"ReactDOM.render(<App />, document.getElementById('container'));"}</code>
-            </div>  
+            </div>
 
-            <p>So, we can try and check if it's working. First let's make sure our server is up and running, if not just run 'npm start' on the project directory and open our browser and go to<code>http://localhost:8080</code> and we should be able to see 'Hi there!' on the page.</p>          
+            <p>So, we can try and check if it's working. First let's make sure our server is up and running, if not just run 'npm start' on the project directory and open our browser and go to<code>http://localhost:8080</code> and we should be able to see 'Hi there!' on the page.</p>
         	</div>
       	</div>
     );
-  }  
+  }
 }
 
 export default ReactComponent;

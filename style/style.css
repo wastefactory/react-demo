@@ -30,18 +30,14 @@ code{
 	font-family: 'Pacifico', cursive;
 }
 
-divider{
-	border-bottom: 1px solid #F5DEB3;
-	box-shadow: 0 1px 1px #FFF8DC;
-	display: block;
-}
-
 .theme{
 	color: #4CAF50 !important;
 }
 
-.home-page .title{
+.page-title{
 	padding: 20px;
+	border-bottom: 1px solid #F5DEB3;
+	box-shadow: 0 1px 1px #FFF8DC;
 }
 
 .home-page .description{

@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
+import PageTitle from './../page_title';
 
 class Setup extends Component{
   render(){
+
+    const pageInfo = {
+      title: [<label className="theme" key="0">Setting</label>, " it up"],
+      description: "Let's get started"
+    };
+
     return (
       	<div className="home-page">
-	        <div className="title">
-	        	<h1 className="logo-font"><label className="theme">Setting</label> it up</h1> <span>Let{"'"}s get started</span>
-	        </div>
-          <divider />
+	        <PageTitle info={pageInfo}/>
 
           <div className="description">
             <p>I have created a simple react starter kit using webpack + babel as our compiler. Here is the <a href="https://github.com/wastefactory/react-starter-kit" target="_blank" className="link">link</a> of the github starter kit that I created specially just for you.</p>
